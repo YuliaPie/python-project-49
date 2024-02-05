@@ -2,22 +2,22 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
-license = "n"
-readme = "README.md"
+authors = ["Yulia <jilly-2005@yandex.ru>"]
 packages = [
   { include = "brain_games" },
 ]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 prompt = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
+brain-even = "brain_games.scripts.brain_even:main"
