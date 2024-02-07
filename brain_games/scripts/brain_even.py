@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import random
-from brain_games import main
-from asker import ask_three_times
+from brain_games.scripts.brain_games import main
+from brain_games.asker import ask_three_times
 
 name = main()
 print('Answer "yes" if the number is even, otherwise answer "no".')
