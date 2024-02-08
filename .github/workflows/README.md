@@ -1,5 +1,12 @@
-# Automatic tests
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/YuliaPie/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/YuliaPie/python-project-49/actions)
 
-After completing all the steps in the project, automatic tests will become available to you. Tests are run on each commit - once all tasks in the Hexlet interface are completed, make a commit, and the tests will run automatically.
+[![Maintainability](https://api.codeclimate.com/v1/badges/86f36ebddad41482df90/maintainability)](https://codeclimate.com/github/YuliaPie/python-project-49/maintainability)
 
-The hexlet-check.yml file is responsible for running these tests - do not delete this file, edit it, or rename the repository.
+[![asciicast](https://asciinema.org/a/J2GGHZEg4eKqQsyRgp0Xb8XVu.svg)](https://asciinema.org/a/J2GGHZEg4eKqQsyRgp0Xb8XVu)
+
+[![asciicast](https://asciinema.org/a/KnhhEMZYVKaYNKPgobKHD3VBS.svg)](https://asciinema.org/a/KnhhEMZYVKaYNKPgobKHD3VBS)
+
+[![asciicast](https://asciinema.org/a/Z1qmZNq7eiwYGilHNJG91d7bq.svg)](https://asciinema.org/a/Z1qmZNq7eiwYGilHNJG91d7bq)
+
+[![asciicast](https://asciinema.org/a/WHVO1Uy0CNNSssCKlF0TVDUwK.svg)](https://asciinema.org/a/WHVO1Uy0CNNSssCKlF0TVDUwK)
