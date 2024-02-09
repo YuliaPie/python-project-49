@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import random
 from brain_games.scripts.brain_games import main
 from brain_games.asker import ask_three_times
 from brain_games.games.progression import progression_randoms

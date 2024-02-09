@@ -13,6 +13,7 @@ def ask_three_times(randoms, name):
                 print(f"Congratulations, {str(name)}!")
                 exit()
         else:
-            print(f"{answer} is wrong answer ;(. Correct answer was {correct_answer}.")
+            print(f"{answer} is wrong answer ;(."
+                  f"Correct answer was {correct_answer}.")
             print(f"Let's try again, {str(name)}!")
             exit()

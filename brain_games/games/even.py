@@ -1,3 +1,6 @@
+import random
+
+
 def even_randoms():
     number = random.randint(1, 100)
     if number % 2 == 0:

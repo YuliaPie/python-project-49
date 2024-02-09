@@ -1,3 +1,6 @@
+import random
+
+
 def gcd_randoms():
     first = random.randint(1, 100)
     second = random.randint(1, 100)

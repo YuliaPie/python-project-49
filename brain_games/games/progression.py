@@ -1,3 +1,6 @@
+import random
+
+
 def progression_randoms():
     first_number = random.randint(1, 20)
     step = random.randint(1, 5)
