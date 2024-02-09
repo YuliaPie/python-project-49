@@ -2,22 +2,9 @@
 import random
 from brain_games.scripts.brain_games import main
 from brain_games.asker import ask_three_times
-
+from brain_games.games.prime import prime_randoms
 
 name = main()
-def prime_randoms():
-    number = random.randint(1, 100)
-    answer = ""
-    if number == 1:
-        answer = "no"
-    root = int(number ** 0.5)
-    possible_deviders = list(range(2, root+1))
-    for n in possible_deviders:
-        if number % n == 0:
-            answer = "no"
-            break
-    if answer != "no":
-        answer = "yes"
-    return [str(number), answer]
-prime_randoms = [prime_randoms(), prime_randoms(), prime_randoms()]
+print('Answer "yes" if the number is prime, otherwise answer "no".')
+prime_randoms = [prime_randoms() for _ in range(3)]
 ask_three_times(prime_randoms, name)
