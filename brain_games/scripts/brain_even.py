@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import main
-from brain_games.asker import ask_three_times
-from brain_games.games.even import even_randoms
+from brain_games.engine import run
+from brain_games.games import even
 
 
-name = main()
-print('Answer "yes" if the number is even, otherwise answer "no".')
-even_randoms = [even_randoms() for _ in range(3)]
-ask_three_times(even_randoms, name)
+def main():
+    run(even)
+
+
+if __name__ == '__main__':
+    main()

@@ -1,7 +1,10 @@
 import random
 
 
-def progression_randoms():
+TASK = "What number is missing in the progression?"
+
+
+def randoms():
     first_number = random.randint(1, 20)
     step = random.randint(1, 5)
     progression = [first_number]
@@ -11,4 +14,4 @@ def progression_randoms():
     answer = str(progression[hidden_index])
     progression[hidden_index] = ".."
     question = (' '.join(map(str, progression)))
-    return [question, answer]
+    return question, answer

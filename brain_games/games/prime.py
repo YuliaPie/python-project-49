@@ -1,7 +1,10 @@
 import random
 
 
-def prime_randoms():
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def randoms():
     number = random.randint(1, 100)
     answer = ""
     if number == 1:
@@ -14,4 +17,4 @@ def prime_randoms():
             break
     if answer != "no":
         answer = "yes"
-    return [str(number), answer]
+    return str(number), answer

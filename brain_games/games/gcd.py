@@ -1,7 +1,10 @@
 import random
 
 
-def gcd_randoms():
+TASK = "Find the greatest common divisor of given numbers."
+
+
+def randoms():
     first = random.randint(1, 100)
     second = random.randint(1, 100)
     question = f"{first} {second}"
@@ -9,9 +12,9 @@ def gcd_randoms():
     randoms.sort()
     first = randoms[0]
     second = randoms[1]
-    n = first
+    devider = first
     while True:
-        if second % n == 0 and first % n == 0:
-            return [question, n]
+        if second % devider == 0 and first % devider == 0:
+            return question, str(devider)
         else:
-            n -= 1
+            devider -= 1

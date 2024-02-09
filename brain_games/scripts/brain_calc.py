@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import main
-from brain_games.asker import ask_three_times
-from brain_games.games.calc import calc_randoms
+from brain_games.engine import run
+from brain_games.games import calc
 
 
-name = main()
-print('What is the result of the expression?')
-calc_randoms = [calc_randoms() for _ in range(3)]
-ask_three_times(calc_randoms, name)
+def main():
+    run(calc)
+
+
+if __name__ == '__main__':
+    main()

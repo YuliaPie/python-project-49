@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import main
-from brain_games.asker import ask_three_times
-from brain_games.games.gcd import gcd_randoms
+from brain_games.engine import run
+from brain_games.games import gcd
 
-name = main()
-print('Find the greatest common divisor of given numbers.')
-gcd_randoms = [gcd_randoms() for _ in range(3)]
-ask_three_times(gcd_randoms, name)
+
+def main():
+    run(gcd)
+
+
+if __name__ == '__main__':
+    main()

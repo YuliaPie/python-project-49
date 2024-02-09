@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import main
-from brain_games.asker import ask_three_times
-from brain_games.games.progression import progression_randoms
+from brain_games.engine import run
+from brain_games.games import progression
 
 
-name = main()
-print('What number is missing in the progression?')
-progression_randoms = [progression_randoms() for _ in range(3)]
-ask_three_times(progression_randoms, name)
+def main():
+    run(progression)
+
+
+if __name__ == '__main__':
+    main()

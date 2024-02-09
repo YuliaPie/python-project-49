@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-from brain_games.scripts.brain_games import main
-from brain_games.asker import ask_three_times
-from brain_games.games.prime import prime_randoms
+from brain_games.engine import run
+from brain_games.games import prime
 
-name = main()
-print('Answer "yes" if the number is prime, otherwise answer "no".')
-prime_randoms = [prime_randoms() for _ in range(3)]
-ask_three_times(prime_randoms, name)
+
+def main():
+    run(prime)
+
+
+if __name__ == '__main__':
+    main()
