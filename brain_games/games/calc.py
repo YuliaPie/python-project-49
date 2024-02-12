@@ -4,7 +4,7 @@ import random
 TASK = 'What is the result of the expression?.'
 
 
-def randoms():
+def get_question_and_answer():
     first = random.randint(1, 100)
     second = random.randint(1, 100)
     operation = random.choices("+-*")
