@@ -6,9 +6,8 @@ TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 def get_question_and_answer():
     number = random.randint(1, 100)
-    if number % 2 == 0:
-        correct_answer = "yes"
-    if number % 2 != 0:
-        correct_answer = "no"
-    question = f"{number}"
-    return question, correct_answer
+
+    def is_even(number):
+        return False if number % 2 else True
+    answer = "yes" if is_even(number) else "no"
+    return str(number), answer

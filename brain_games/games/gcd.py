@@ -1,20 +1,13 @@
 import random
+import math
 
 
 TASK = "Find the greatest common divisor of given numbers."
 
 
 def get_question_and_answer():
-    first = random.randint(1, 100)
-    second = random.randint(1, 100)
-    question = f"{first} {second}"
-    randoms = [first, second]
-    randoms.sort()
-    first = randoms[0]
-    second = randoms[1]
-    devider = first
-    while True:
-        if second % devider == 0 and first % devider == 0:
-            return question, str(devider)
-        else:
-            devider -= 1
+    first_number = random.randint(1, 100)
+    second_number = random.randint(1, 100)
+    question = f"{first_number} {second_number}"
+    answer = str(math.gcd(first_number, second_number))
+    return question, answer
