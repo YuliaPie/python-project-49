@@ -86,7 +86,6 @@ Asciinema in the end of readme show how to launch games
 
 Далее приведены asciinema для иллюстрации запуска игр:
 
-[![asciicast](https://asciinema.org/a/V7CFCERfnoEyxWmblMLwGwcY3.svg)](https://asciinema.org/a/V7CFCERfnoEyxWmblMLwGwcY3)
 
 [![asciicast](https://asciinema.org/a/ollBVz3R9ghtPsV9JeVV7DhtL.svg)](https://asciinema.org/a/ollBVz3R9ghtPsV9JeVV7DhtL)
 
